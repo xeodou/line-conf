@@ -1,0 +1,10 @@
+.*
+*~
+!.gitignore
+!.jshintrc
+*/node_modules/*
+/node_modules
+config.json
+models
+*.orig
+watchdog
