@@ -87,6 +87,17 @@ describe('lib / LineConf', function () {
             });
         });
 
+        it('should get value', function(done) {
+            lineConf.get(arr[1], 'lorem92', function(err, data) {
+                should.not.exist(err);
+                console.log(data);
+                data.value1.should.be.equal('Lorem ipsum dolor sit amet');
+                data.value2.should.be.equal('lorem92');
+                data.value3.should.be.equal('12312321');
+                done();
+            });
+        });
+
     });
 
 });
